@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选择寝室</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript">
+    	document.documentElement.style.fontSize =document.documentElement.clientWidth / 6.4 + 'px';
+    </script>
+</head>
+<body>
+	<header class="bar-nav">
+		<a src="javascript:void(0);" class="button-nav left-arrow"></a>
+		<h1 class="title">重庆师范大学</h1>
+	</header>
+	<div class="page">
+		<div class="content detail-address">
+			<div class="side-bar" id="building">
+				<ul>
+					<li>清风苑</li>
+					<li>竹苑</li>
+					<li>北苑</li>
+					<li>梅苑</li>
+					<li>兰苑</li>
+					<li class="active">芷兰苑</li>
+					<li>梅苑</li>
+					<li>梅苑梅苑梅苑梅苑梅苑梅苑</li>
+					<li>清风苑</li>
+					<li>竹苑</li>
+					<li>北苑</li>
+					<li>梅苑</li>
+					<li>兰苑</li>
+					<li>芷兰苑</li>
+					<li>梅苑</li>
+					<li>梅苑</li>
+					<li>清风苑</li>
+					<li>竹苑</li>
+					<li>北苑</li>
+					<li>梅苑</li>
+					<li>兰苑</li>
+					<li>芷兰苑</li>
+					<li>梅苑</li>
+					<li>梅苑</li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="con-bar">
+				<h3 class="title"><span>芷兰苑</span></h3>
+				<ul id="storey">
+					<li>1号楼</li>
+					<li>2号楼</li>
+					<li class="active">3号楼</li>
+					<li>4号楼</li>
+					<li>5号楼</li>
+					<li>6号楼</li>
+					<li>7号楼</li>
+					<li>8号楼</li>
+					<li>4号楼</li>
+					<li>5号楼</li>
+					<li>6号楼</li>
+					<li>7号楼</li>
+					<li>8号楼</li>
+					<li>4号楼</li>
+					<li>5号楼</li>
+					<li>6号楼</li>
+					<li>7号楼</li>
+					<li>8号楼</li>
+					<li>4号楼</li>
+					<li>5号楼</li>
+					<li>6号楼</li>
+					<li>7号楼</li>
+					<li>8号楼</li>
+					<li>4号楼</li>
+					<li>5号楼</li>
+					<li>6号楼</li>
+					<li>7号楼</li>
+					<li>8号楼</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="dialog">
+		<div class="dialog-wrapper">
+			<h3 class="title">选择寝室</h3>
+			<div class="container">
+				<div class="cl popup">
+					<div class="col-2">
+						<ul id="storey-2">
+							<li>1层</li>
+							<li class="active">2层</li>
+							<li>3层</li>
+							<li>4层</li>
+							<li>5层</li>
+							<li>6层</li>
+							<li>7层</li>
+							<li>8层</li>
+							<li>9层</li>
+							<li>10层</li>
+							<li>11层</li>
+							<li>12层</li>
+							<li>13层</li>
+							<li>14层</li>
+							<li>15层</li>
+							<li>16层</li>
+							<li>17层</li>
+							<li>18层</li>
+							<li>19层</li>
+							<li>11层</li>
+							<li>12层</li>
+							<li>13层</li>
+							<li>14层</li>
+							<li>15层</li>
+							<li>16层</li>
+							<li>17层</li>
+							<li>18层</li>
+							<li>19层</li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<ul id="storey-2">
+							<li>101室</li>
+							<li>102室</li>
+							<li class="active">103室</li>
+							<li>104室</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="layer"></div>
+	<script>
+	var storeySelect = document.querySelectorAll('#storey li');
+	for(var i = 0; i < storeySelect.length; i++){
+		storeySelect[i].onclick = function(){
+			document.querySelector('.dialog').classList.add('show');
+		};
+	}
+
+	var citys = document.querySelectorAll('#storey-2 li');
+	for(var i = 0; i < citys.length; i++){
+		citys[i].onclick = function(){
+			document.querySelector('.dialog').classList.remove('show');
+		};
+	}
+	</script>
+	<!-- <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script> -->
+</body>
+</html>

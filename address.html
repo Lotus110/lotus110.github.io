@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>选择城市</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript">
+    	document.documentElement.style.fontSize =document.documentElement.clientWidth / 6.4 + 'px';
+    </script>
+</head>
+<body>
+	<header class="bar-nav">
+		<a src="javascript:void(0);" class="button-nav left-arrow"></a>
+		<h1 class="title">选择城市</h1>
+	</header>
+	<div class="page">
+		<div class="content city">
+			<div class="search">
+				<input type="text" placeholder="请选择城市">
+				<a href="javascript:;" class="search-btn"></a>
+			</div>
+			<div class="item-row">
+				<h3 class="title">热门城市</h3>
+				<ul class="cl citySelect">
+					<li><span>北京</span></li>
+					<li><span>重庆</span></li>
+					<li><span>杭州</span></li>
+					<li><span>西安</span></li>
+					<li><span>北京</span></li>
+					<li><span>北京</span></li>
+					<li><span>北京</span></li>
+					<li><span>北京</span></li>
+				</ul>
+			</div>
+			<div class="item-col">
+				<h3 class="title">所有城市</h3>
+				<ul>
+					<li>山西省</li>
+					<li>河北省</li>
+					<li>陕西省</li>
+					<li>四川省</li>
+					<li>阿坝</li>
+					<li>北京</li>
+					<li>北京</li>
+					<li>北京</li>
+					<li>北京</li>
+					<li>北京</li>
+					<li>北京</li>
+					<li>北京</li>
+					<li>成都</li>
+					<li>成都</li>
+					<li>成都</li>
+					<li>成都</li>
+					<li>成都</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="dialog">
+		<div class="dialog-wrapper">
+			<h3 class="title">山西省</h3>
+			<div class="container">
+				<div class="popup" id="city">
+					<ul>
+						<li>太原市</li>
+						<li class="active">运城市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+						<li>大同市</li>
+						<li>平遥市</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dialog-bg"></div>
+
+	<!-- <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/public.js"></script> -->
+</body>
+</html>
+<script  type="text/javascript">
+
+	var citySelect = document.querySelectorAll('.citySelect li');
+
+	for(var i = 0; i < citySelect.length; i++){
+		citySelect[i].onclick = function(){
+			document.querySelector('.dialog').classList.add('show');
+		};
+	}
+	var citys = document.querySelectorAll('#city li');
+  for(var i = 0; i < citys.length; i++){
+    citys[i].onclick = function(){
+      document.querySelector('.dialog').classList.remove('show');
+    };
+  }
+</script>

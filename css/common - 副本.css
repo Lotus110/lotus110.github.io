@@ -1,0 +1,257 @@
+html, body {
+	margin:0;
+	padding:0;
+	border:0;
+}
+/* HTML5 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+ol, ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	border:0;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+a {
+	text-decoration:none;
+	color:#6a6a6a;
+}
+p{
+	margin:0;
+	padding:0;
+	border:0;
+}
+textarea {
+	resize:none;
+
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+a {
+	outline:none;
+}
+input[type=button], input[type=submit] {
+	-webkit-appearance: none;
+}
+input:not([type="image" i]), textarea {
+    box-sizing: border-box;
+}
+body{
+	height: 100%;
+ 	width: 100%;
+    background: #f3f3f3;
+}
+.top{
+	position: absolute;
+	top: 0;
+	line-height: 0.6rem;
+	background: #fff;
+	width: 100%;
+}
+.top-content{
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+  	height: 0.6rem;
+}
+.top-img{
+	width: 0.19rem;
+	height: 0.1rem;
+	margin-right:0.16rem;
+	display: block;
+	display: flex;
+  	align-items: center;
+}
+.top-title{
+	font-size: 0.3rem;
+	color: #6c6c6c;
+	width: 2.5rem;
+	display: inline-block;
+ 	overflow:hidden;
+ 	text-overflow:ellipsis; 
+ 	white-space: nowrap;
+}
+.banner-box{
+	position: relative;
+	height: 3.1rem;
+	width: 100%;
+}
+.msg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background: rgba(51,51,51,0.2);
+	height: 0.54rem;
+	width: 100%;
+	color:#fff;
+	font-size: 0.17rem;
+	line-height: 0.54rem;
+	display: flex;
+  	align-items: center;
+}
+.notice{
+	margin-left: 0.18rem;
+	margin-right: 0.11rem;
+	width: 0.26rem;
+	display: inline-block;
+	vertical-align: middle;
+	display: flex;
+  	align-items: center;
+}
+.content{
+	margin-top: 0.18rem;
+	width: 100%;
+	margin-bottom: 0.04rem;
+	position: absolute;
+	top: 3.7rem;
+	bottom:0.94rem;
+	overflow: auto;
+}
+.slide{
+	background: #fff;
+	width: 1.52rem;
+	margin-right: 0.02rem;
+	height: auto;
+	overflow-y: auto;
+	height: 100%;
+	float: left;
+}
+.slide ul li a{
+	padding-top: 0.22rem;
+	padding-bottom: 0.22rem;
+	color: #333333;
+	font-size: 0.24rem;
+	display: block;
+	padding-left: 0.17rem;
+	line-height: 0.3rem;
+}
+.slide .slide-active{
+	background: #f3f3f3;
+}
+.slide .slide-active a{
+	color: #f0b51d;
+	font-weight: bold;
+}
+.right{
+	background: #fff;
+	height: 100%;
+	overflow-y: auto;
+	margin-left: 1.58rem;
+}
+.footer{
+	padding-top: 0.08rem;
+	height:0.78rem;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+	flex-direction:row;
+	padding-bottom: 0.08rem;
+	z-index: 300;
+}
+.footer-a{
+	display: block;
+	color: #6c6c6c;
+	font-size: 0.17rem;
+	flex: 1;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer-home{
+	display: block;
+	width: 0.43rem;
+	height: 0.43rem;
+}
+.footer-cart{
+	display: block;
+	width: 0.41rem;
+	height: 0.43rem;
+}
+.footer-order{
+	display: block;
+	width: 0.37rem;
+	height: 0.43rem;
+}
+.footer-user{
+	display: block;
+	width: 0.33rem;
+	height: 0.43rem;
+}
+.footer-p{
+	margin-top: 0.05rem;
+}
+.footer-active p{
+ 	color: #f0b51d;
+}
+.right-box{
+	margin-left: 0.18rem;
+}
+.item{
+	padding-top: 0.16rem;
+	padding-bottom: 0.14rem;
+	border-bottom: 0.01rem solid #f3f3f3;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-col1{
+	margin-left: 0.02rem;
+	margin-right: 0.14rem;
+	width: 0.93rem;
+	height: 0.93rem;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.item-col2{
+	flex: 3;
+	display: inline-block;
+}
+.item-title{
+	font-size: 0.24rem;
+	color: #333333;
+}
+.item-month{
+	color: #979797;
+	font-size: 0.16rem; 
+}
+.item-sale{
+	/*margin-top: 0.1rem;*/
+	font-size: 0.16rem;
+}
+.sale{
+	width: 0.21rem;
+	height: 0.21rem;
+	margin-right: 0.08rem;
+	display: inline-block;
+}
+.price{
+	color: #333333;
+	font-size: 0.21rem;
+	margin-right: 0.1rem;
+	display: inline-block;
+}
+.sale-price{
+	color: #979797;
+	font-size: 0.16rem;
+	display: inline-block;
+}

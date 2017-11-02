@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>购物车</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript">
+    	document.documentElement.style.fontSize =document.documentElement.clientWidth / 6.4 + 'px';
+    </script>
+</head>
+<body>
+	<header class="bar-nav">
+		<span class="button-nav left-arrow"></span>
+		<h1 class="title">购物车</h1>
+	</header>
+	<div class="footer"> 
+		<a href="javascript:void(0);" class="footer-a">
+			<span class="footer-icon footer-home"></span>
+			<p class="footer-p">首页</p>
+		</a>
+		<a href="javascript:void(0);" class="footer-a active">
+			<span class="footer-icon footer-cart"></span>
+			<p class="footer-p">购物车</p>
+		</a>
+		<a href="javascript:void(0);" class="footer-a">
+			<span class="footer-icon footer-order"></span>
+			<p class="footer-p">订单</p>
+		</a>
+		<a href="javascript:void(0);" class="footer-a">
+			<span class="footer-icon footer-user"></span>
+			<p class="footer-p">我的</p>
+		</a>
+	</div>
+	<div class="page">
+		<div class="content shoping-cart">
+			<div class="item">
+				<h3 class="title">
+					<span>重庆师范大学清风苑</span>
+					<a href="javascript:;"></a>
+				</h3>
+				<div class="commodity">
+					<ul>
+						<li>
+							<img src="images/img1.png">
+							<div class="describe">
+								<h6 class="name">UHA多口味果汁软糖</h6>
+								<span class="num">2</span>
+							</div>
+							<div class="price">
+								<span class="cost">10</span>
+								<span class="disable">16</span>
+							</div>
+						</li>
+						<li>
+							<img src="images/img1.png">
+							<div class="describe">
+								<h6 class="name">UHA多口味果汁软糖</h6>
+								<span class="num">2</span>
+							</div>
+							<div class="price">
+								<span class="cost">10</span>
+								<span class="disable">16</span>
+							</div>
+						</li>
+						<li>
+							<img src="images/img1.png">
+							<div class="describe">
+								<h6 class="name">UHA多口味果汁软糖</h6>
+								<span class="num">2</span>
+							</div>
+							<div class="price">
+								<span class="cost">10</span>
+								<span class="disable">16</span>
+							</div>
+						</li>
+						<li>
+							<img src="images/img1.png">
+							<div class="describe">
+								<h6 class="name">UHA多口味果汁软糖</h6>
+								<span class="num">2</span>
+							</div>
+							<div class="price">
+								<span class="cost">10</span>
+								<span class="disable">16</span>
+							</div>
+						</li>
+						<li>
+							<img src="images/img1.png">
+							<div class="describe">
+								<h6 class="name">UHA多口味果汁软糖</h6>
+								<span class="num">2</span>
+								<span class="hint">库存不足</span>
+							</div>
+							<div class="price">
+								<span class="cost">10</span>
+								<span class="disable">16</span>
+							</div>
+						</li>
+						<li>
+							<img src="images/img1.png">
+							<div class="describe">
+								<h6 class="name">UHA多口味果汁软糖</h6>
+								<span class="num">2</span>
+								<span class="hint">库存不足</span>
+							</div>
+							<div class="price">
+								<span class="cost">10</span>
+								<span class="disable">16</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="more"><span>还有10个商品</span></div>
+				<div class="settlement">
+					<span class="discount">已优惠<span class="red">5</span>元</span>
+					<a class="btn" href="javascript:;">去结算</a>
+					<span class="subtotal">小计:<span class="red">￥5</span></span>
+				</div>
+			</div>
+			<div class="item">
+				<h3 class="title">
+					<span>重庆师范大学清风苑</span>
+					<a href="javascript:;"></a>
+				</h3>
+				<ul class="commodity auto">
+					<li>
+						<img src="images/img1.png">
+						<div class="describe">
+							<h6 class="name">UHA多口味果汁软糖</h6>
+							<span class="num">2</span>
+						</div>
+						<div class="price">
+							<span class="cost">10</span>
+							<span class="disable">16</span>
+						</div>
+					</li>
+					<li>
+						<img src="images/img1.png">
+						<div class="describe">
+							<h6 class="name">UHA多口味果汁软糖</h6>
+							<span class="num">2</span>
+						</div>
+						<div class="price">
+							<span class="cost">10</span>
+							<span class="disable">16</span>
+						</div>
+					</li>
+				</ul>
+				<div class="settlement">
+					<span class="discount">已优惠<span class="red">5</span>元</span>
+					<a class="btn" href="javascript:;">去结算</a>
+					<span class="subtotal">小计:<span class="red">￥5</span></span>
+				</div>
+			</div>
+			<div class="item"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.more').click(function(){
+				var _self = $(this);
+				if(!_self.hasClass('stop')){
+					var maxH = _self.prev().find('ul').height();
+					_self.prev().animate({
+			            maxHeight: maxH
+			        }, 600, function(){
+			        	_self.addClass('stop');
+			        });
+			        return;
+				}
+				_self.prev().animate({
+		            maxHeight: '3.6rem'
+		        }, 600, function(){
+		        	_self.removeClass('stop');
+		        });
+
+			});
+		});
+	</script>
+	
+</body>
+</html>
